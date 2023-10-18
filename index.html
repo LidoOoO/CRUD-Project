@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./logo/bookmark.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Righteous&family=Titillium+Web:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <main class="mx-auto mt-5">
+      <section
+        class="w-100 h-100 position-relative d-flex justify-content-center demo"
+      >
+        <h1 class="py-2 text-center prag position-absolute">Bookmarker</h1>
+      </section>
+      <section class="w-100 p-4 data">
+        <div
+          class="te bookmark-body w-100 d-flex flex-column justify-content-center align-items-center gap-4"
+        >
+          <h2 class="text-center h2 mb-4">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+        </div>
+        <label for="" class="mb-1">
+          <i class="fa-solid fa-book-bookmark"></i>
+          <strong> Site Name </strong></label
+        >
+        <input
+          type="text"
+          class="form-control mb-4"
+          id="siteN"
+          placeholder="Bookmark Name"
+        />
+        <label for="" class="mb-1"
+          ><i class="fa-solid fa-link"></i><strong> Site URL </strong></label
+        >
+        <input
+          type="text"
+          class="form-control mb-4"
+          id="siteU"
+          placeholder="Website URL"
+        />
+        <div class="text-center">
+          <button onclick="add()" class="btn btn-danger px-5">submit</button>
+        </div>
+      </section>
+      <section>
+        <table class="table mt-4 text-center bg-light">
+          <thead>
+            <tr>
+              <th class="text-capitalize">index</th>
+              <th class="text-capitalize">Website Name</th>
+              <th class="text-capitalize">Visit</th>
+              <th class="text-capitalize">Delete</th>
+            </tr>
+          </thead>
+          <tbody class="tc" id="tc"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
